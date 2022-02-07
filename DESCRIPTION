@@ -3,10 +3,10 @@ Title: Easily create a csv file for approving particpants on Amazon Mechanical T
 Version: 0.0.0.9000
 Authors@R: 
     person("Andrew", "Li", , "first.last@example.com", role = c("aut", "cre"))
-Description: When you use Amazon Mechanical Turk crowdsourcing website, you need to send a CSV file back to confirm which
-particpants passed attention checks. After which, you can pay those that passed all the attention checks. This package 
-houses functions that will do this for you and create a new file that you can upload on Amazon.
+Description: When you use Amazon Mechanical Turk crowdsourcing website, you need to send a CSV file back to confirm which particpants passed attention checks. After which, you can pay those that passed all the attention checks. This package houses functions that will do this for you and create a new file that you can upload on Amazon.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
+Imports: 
+    dplyr
