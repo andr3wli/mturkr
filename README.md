@@ -36,5 +36,31 @@ devtools::install_github("andr3wli/mturkr")
 This is how you would use the functions in the :
 
 ``` r
+# read in the data 
+batch <- readr::read_csv("data/exp6/Batch_4646160_batch_results.csv")
+mturk <- readr::read_csv("data/exp6/mturkcode.csv")
+analysis <- readr::read_csv("data/exp6/petition.csv")
+```
+
+``` r
 library(mturkr)
+
+# See if the batch code participants gave matches the mturk code we provided  
+keep <- discard_list(df1 = batch, df2 = mturk)
+
+# check if participants passed the attention check 
+# note the example data set in this package did not have an attention check 
+attention_question <- "This is an attention check. Please select ‘strongly agree’ to pass this check. You will not be compensated if you fail this check."
+failed <- failed_attention_check(analysis, question = attention_question)
+
+# create the approve column 
+clean_batch <- create_approve_col(batch, keep = keep, fail = failed)
+
+# create the reject column 
+clean_batch <- create_reject_col(clean_batch, keep = keep, fail = failed)
+```
+
+``` r
+# finally, save the new data set to be sent back to Amazon to confirm which participants get payment 
+readr::write_csv(clean_batch, file = here::here("clean_batch", "batch_data_payment_confirmation.csv"))
 ```
