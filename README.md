@@ -5,7 +5,7 @@
 
 <!-- badges: start -->
 
-\[\]<https://img.shields.io/badge/AndrewLi-mturkr-green> [![Lifecycle:
+![](https://img.shields.io/badge/AndrewLi-mturkr-green) [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![License:
 MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://cran.r-project.org/web/licenses/MIT)
