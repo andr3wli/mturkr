@@ -5,7 +5,7 @@
 
 <!-- badges: start -->
 
-<https://img.shields.io/badge/AndrewLi-mturkr-green> [![Lifecycle:
+\[\]<https://img.shields.io/badge/AndrewLi-mturkr-green> [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![License:
 MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://cran.r-project.org/web/licenses/MIT)
@@ -17,9 +17,9 @@ create a new data set with the required reject and approve columns to
 for participants payment.
 
 I use MTurk a lot for my data collection so I think it is worthwhile to
-create a package of the functions I use a lot. I mainly intend to use
-this myself but if you use MTurk for data collection as well, you might
-find this package useful
+create a package of the functions so that my analysis is cleaner. I
+mainly intend to use this myself but if you use MTurk for data
+collection as well, you might find this package useful
 
 ## Installation
 
@@ -33,7 +33,7 @@ devtools::install_github("andr3wli/mturkr")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is how you would use the functions in the :
 
 ``` r
 library(mturkr)
