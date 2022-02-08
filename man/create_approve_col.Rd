@@ -20,5 +20,5 @@ a data frame with the approve column manipulated: will have X is valid, empty ch
 Update the approve column if keep is in the Answer.surveycode and if the Answer.surverycode is not in the fail vector (failed attention check)
 }
 \examples{
-create_approve_col(batch_data, keep, failed)
+clean_batch <- create_approve_col(batch, keep = keep, fail = failed)
 }

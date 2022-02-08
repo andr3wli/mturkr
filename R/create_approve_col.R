@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#' create_approve_col(batch_data, keep, failed)
+#' clean_batch <- create_approve_col(batch, keep = keep, fail = failed)
 create_approve_col <- function(df, keep, fail) {
   df |>
     dplyr::mutate(Approve = dplyr::case_when(Answer.surveycode %in% keep & !(Answer.surveycode %in% fail) ~ "X",
