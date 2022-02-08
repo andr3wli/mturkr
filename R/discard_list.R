@@ -9,7 +9,7 @@
 #' @examples
 #' discard_list(batch_data, mturk_data)
 discard_list <- function(df1, df2) {
-  keep <- vector("character", nrow(batch_data))
+  keep <- vector("character", nrow(df1))
 
   for (i in df1$Answer.surveycode) {
     for (j in df2$Code) {

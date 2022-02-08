@@ -12,7 +12,7 @@
 failed_attention_check <- function(df, question) {
 
   failed_vector <- df |>
-    dplyr::filter(Question == attention_question & Rawresponse !=5) |>
+    dplyr::filter(Question == question & Rawresponse !=5) |>
     dplyr::pull(MTurk)
   return(failed_vector)
 }
