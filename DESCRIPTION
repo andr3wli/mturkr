@@ -1,6 +1,6 @@
 Package: mturkr
 Title: Easily create a csv file for approving particpants on Amazon Mechanical Turk (MTurk) crowdsourcing website
-Version: 0.0.0.9000
+Version: 0.0.0.1
 Authors@R: 
     person("Andrew", "Li", , "andrewc.li@ubc.ca", role = c("aut", "cre"))
 Description: When you use Amazon Mechanical Turk crowdsourcing website, you need to send a CSV file back to confirm which particpants passed attention checks. After which, you can pay those that passed all the attention checks. This package houses functions that will do this for you and create a new file that you can upload on Amazon.
